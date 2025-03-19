@@ -5,6 +5,11 @@ public class Livro {
     public float precoVenda;
     public int paginas;
 
+    public Livro(String autor, String titulo) {
+      this.autor = autor;
+      this.titulo = titulo;
+    };
+
     public float lucro(){
         return (precoVenda - custoProducao);
     }
